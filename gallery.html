@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery | Velvet Roast Café</title>
+	<link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+<header class="hero">
+	<div class="logo-block"></div>
+	<nav>
+		<div class="logo">Velvet Roast Café</div>
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="menu.html">Меню</a></li>
+			<li><a href="about.html">История</a></li>
+			<li><a href="reserve.html">Резерв</a></li>
+		</ul>
+	</nav>
+	<div class="hero-content">
+            <h1>Наша галерея</h1>
+            <p>
+                Моменты, вкусы и атмосфера.
+            </p>
+    </div>
+</header>
+    <section class="intro">
+        <h2>Заглянем в Velvet Roast</h2>
+        <p>
+            Каждый уголок нашего кафе рассказывает свою историю. 
+            Познакомьтесь с нашим уютным интерьером, напитками ручной работы,
+             свежей выпечкой и незабываемыми моментами.
+        </p>
+    </section>
+    <section class="gallery">
+        <div class="photo">
+            <img src="img/2foto.jpg">
+            <div class="caption">Утренний кофе</div>
+        </div>
+        <div class="photo">
+            <img src="img/bake.jpg">
+            <div class="caption">Свежая выпечка</div>
+        </div>
+        <div class="photo">
+            <img src="img/1foto.jpg">
+            <div class="caption">Интерьер в стиле ретро</div>
+        </div>
+        <div class="photo">
+            <img src="img/latte2.jpg">
+            <div class="caption">Фирменный латте</div>
+        </div>
+        <div class="photo">
+            <img src="img/espresso.jpg">
+            <div class="caption">Моменты с кофе</div>
+        </div>
+        <div class="photo">
+            <img src="img/3foto.jpg">
+            <div class="caption">Уютная атмосфера</div>
+        </div>
+</section>
+<section class="cta">
+    <h2>Проверьте сами</h2>
+    <p>
+        Забронируйте столик и насладитесь атмосферой.
+    </p>
+    <a href="reserve.html">
+        Забронировать столик
+    </a>
+</section>
+<script>
+
+function checkScreen(){
+
+    if(window.innerWidth <= 768){
+
+        document.body.classList.add("mobile");
+
+    }else{
+
+        document.body.classList.remove("mobile");
+
+    }
+
+}
+
+checkScreen();
+
+window.addEventListener("resize", checkScreen);
+
+</script>
+
+<footer>
+    © 2026 Velvet Roast Café
+</footer>
+</body>
+</html>

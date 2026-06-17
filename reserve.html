@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Reserve a Table | Velvet Roast Café</title>
+ 	<link rel="stylesheet" href="reserve.css">
+ </head>
+ <body>
+ <header class="hero">
+	<div class="logo-block"></div>
+	<nav>
+		<div class="logo">Velvet Roast Café</div>
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="about.html">История</a></li>
+			<li><a href="menu.html">Меню</a></li>
+			<li><a href="gallery.html">Галерея</a></li>
+		</ul>
+	</nav>
+	<div class="hero-contect">
+		<h1>Бронь столика</h1>
+		<p> 
+		Насладитесь уютной ретро-атмосферой и кофе ручной работы.
+	    </p>
+	</div>
+</header>
+<div id="successMessage" class="success-message">
+				<h3>Спасибо, что выбрали Velvet Roast Café.</h3>
+				<p>
+					Ваше бронирование принято, и наша команда подтвердит его в ближайшее время.
+				</p>
+</div>
+<section class="reservation">
+		<form id="reservationForm">
+			<div class="reservation-card">
+		    <h2>Забронировать столик</h2>
+			<div class="form-group">
+				<label>Полное имя</label>
+				<input type="text" placeholder="Ваше Имя">
+			</div>
+			<div class="form-group">
+				<label>Адрес электронной почты</label>
+				<input type="text" placeholder="Ваш email.com">
+			</div>
+			<div class="form-group">
+				<label>Номер телефона</label>
+				<input type="text" placeholder="+7 928 777 77 77">
+			</div>
+			<div class="row">
+				
+				<div class="form-group">
+					<label>Дата</label>
+					<input type="date">
+				</div>
+				<div class="form-group">
+					<label>Время</label>
+					<input type="time">
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Особые пожелания</label>
+
+				<textarea placeholder="День Рождения, Годовщина..."></textarea>
+			</div>
+			<button type="submit">
+				Забронировать столик
+			</button>
+		</form>
+	</div>
+</section>
+<footer>
+	© 2026 Velvet Roast Café
+</footer>
+<script>
+	const form = document.getElementById('reservationForm');
+	const success = document.getElementById('successMessage');
+	form.addEventListener('submit', function(e){
+		e.preventDefault();
+		form.style.display='none';
+		success.style.display='block';
+	})
+</script>
+ </body>
+ </html>

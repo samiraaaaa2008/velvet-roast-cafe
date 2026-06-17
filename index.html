@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Velvet Roast Café</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="hero">
+	<div class="logo-block"></div>
+	<nav>
+		<div class="logo">Velvet Roast Café</div>
+		<ul>
+			<li><a href="about.html">История</a></li>
+			<li><a href="menu.html">Меню</a></li>
+			<li><a href="gallery.html">Галерея</a></li>
+			<li><a href="reserve.html">Резерв</a></li>
+		</ul>
+	</nav>
+	<div class="hero-contect">
+		<h1>Горячий кофе. <br>Ретро атмосфера.</h1>
+		<p> 
+		Свежеобжаренный кофе, выпечка ручной работы и уютная ретро-атмосфера в самом центре города.
+	    </p>
+	    <a href="menu.html" class="btn">Открыть меню</a>
+	</div>
+	<img src="img/banner.jpg">
+</header>
+<section id="about" class="about">
+	<div class="text">
+		<h2>Наша История</h2>
+		<p>
+			В Velvet Roast Café вас ждут насыщенный эспрессо, домашние десерты и неподвластный времени ретро-интерьер, вдохновленный элегантными кафе прошлого. Здесь можно замедлиться и насладиться каждым глотком.
+		</p>
+
+	</div>
+
+	<img src="img/story.jpg">
+
+	<div class="image"></div>
+</section>
+<section id="menu" class="menu">
+	<h2>Фирменное меню</h2>
+	<div class="cards">
+		<div class="card">
+			<img src="img/espresso.jpg">
+			<h3>Эспрессо Рояль</h3>
+			<p>Крепкий, ароматный и насыщенный.</p>
+		</div>
+		<div class="card">
+			<img src="img/latte.jpg">
+			<h3>Ванильный латте</h3>
+			<p>Сливочное молоко со сладкой ванилью.</p>
+		</div>
+		<div class="card">
+			<img src="img/tart.jpg">
+			<h3>Ягодный тарт</h3>
+			<p>Свежие ягоды и нежная выпечка.</p>
+		</div>
+	</div>
+</section>
+<section id="gallery" class="gallery">
+	<h2>Velvet Roast внутри</h2>
+	<div class="gallery-grid">
+		<div>
+			<img src="img/1foto.jpg">
+		</div>
+		<div>
+			<img src="img/2foto.jpg">
+		</div>
+		<div>
+			<img src="img/3foto.jpg">
+		</div>
+	</div>
+</section>
+<section id="contact" class="contact">
+	<h2>Приходите к нам</h2>
+	<p>Открыто ежедневно с 8:00 до 22:00</p>
+	<p>Грозный, Проспект Эсамбаева</p>
+	<a href="reserve.html" class="btn">Забронировать столик</a>
+</section>
+<script>
+
+function checkScreen(){
+
+    if(window.innerWidth <= 768){
+
+        document.body.classList.add("mobile");
+
+    }else{
+
+        document.body.classList.remove("mobile");
+
+    }
+
+}
+
+checkScreen();
+
+window.addEventListener("resize", checkScreen);
+
+</script>
+
+<footer>
+	© 2026 Velvet Roast Café
+</footer>
+</body>
+</html> 

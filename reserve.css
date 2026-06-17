@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Cormorant Garamand', serif;
+	background: #FFF8EE;
+	color: #4B1F2B;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 60px;
+}
+.logo{
+	font-family: 'Playfair Display', serif;
+	font-size: 28px;
+	color: #6B1E34;
+}
+nav ul{
+	display: flex;
+	gap: 30px;
+	list-style: none;
+}
+nav a{
+	color: #6B1E34;
+	text-decoration: none;
+	font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.success-message{
+	display: none;
+	text-align: center;
+	padding: 40px;
+	margin-top: 20px;
+	background: #FFF8F1;
+	border: 2px solid #D5BDA5;
+	border-radius: 20px;
+	margin-bottom: 340px;
+}
+.success-message h3{
+	color: #701E38;
+	font-size: 36px;
+	margin-bottom: 15px;
+	font-size: 'Playfair Display', serif;
+}
+.success-message p{
+	font-size: 24px;
+	color: #701E38;
+}
+.hero{
+	min-height: 20vh;
+	background: 
+	    linear-gradient(rgba(255, 248, 238, .7), 
+		rgba(255, 248, 238, .7)),
+	    url('reserve.jpg') center/cover;
+}
+.hero-content{
+	text-align: center;
+	padding-top: 120px;
+}
+.hero h1{
+	font-family: 'Playfair Display';
+	font-size: 72px;
+	color: #6B1E34;
+}
+.hero p{
+	max-width: 650px;
+	margin: 25px auto;
+	font-size: 28px;
+	color: #6B1E34;
+}
+.reservation{
+	display: flex;
+	justify-content: center;
+	padding: 80px 20px;
+}
+.reservation-card{
+	width: 100%;
+	max-width: 750px;
+	background: #FFFDF9;
+	border: 2px solid #701E38;
+	border-radius: 25px;
+	padding: 45px;
+	box-shadow: 0 15px 35px rgba(112, 30, 56, .08);
+}
+.reservation-card h2{
+	text-align: center;
+	margin-bottom: 35px;
+	font-size: 48px;
+	font-family: 'Playfair Display';
+	color: #701E38;
+}
+.form-group{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+label{
+	margin-bottom: 8px;
+	font-size: 24px;
+	color: #701E38;
+}
+input,
+select,
+textarea{
+	padding: 14px;
+	border: 2px solid #D8C1A7;
+	border-radius: 14px;
+	background: #FFF8F1;
+	font-size: 20px;
+	font-family: inherit;
+}
+textarea{
+	resize: none;
+	min-height: 120px;
+}
+.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+button{
+	width: 100%;
+	border: none;
+	border-radius: 40px;
+	background: #701E38;
+	color: white;
+	padding: 18px;
+	cursor: pointer;
+	font-size: 24px;
+	transition: .3s;
+}
+button:hover{
+	background: #8E2748;
+}
+footer{
+	text-align: center;
+	padding: 25px;
+	background: #6B1E34;
+	color: #FFF8EE;
+}
+.mobile nav{
+    flex-direction:column;
+}
+
+.mobile .menu-grid{
+    grid-template-columns:1fr;
+}
+
+.mobile .gallery{
+    grid-template-columns:1fr;
+}

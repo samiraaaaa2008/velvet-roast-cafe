@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Velvet Roast Café | Menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero1">
+	<div class="logo-block"></div>
+	<nav>
+		<div class="logo">Velvet Roast Café</div>
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="about.html">История</a></li>
+			<li><a href="gallery.html">Галерея</a></li>
+			<li><a href="reserve.html">Резерв</a></li>
+		</ul>
+	</nav>
+	<div class="hero-text">
+		<h1>Наше фирменное меню</h1>
+		<p> 
+		приготовлено с любовью и подано с винтажным шармом
+	    </p>
+	</div>
+</header>
+<section id="coffee" class="menu-section">
+	<h2>Кофе и напитки</h2>
+	<div class="menu-grid">
+		<div class="item">
+			<h3>Эспрессо Рояль</h3>
+			<span>570 руб.</span>
+			<p>Насыщенный эспрессо с глубоким ароматом</p>
+		</div>
+		<div class="item">
+			<h3>Ванильный латте</h3>
+			<span>540 руб.</span>
+			<p>Нежное молоко с ванильной сладостью</p>
+		</div>
+		<div class="item">
+			<h3>Карамельный капучино</h3>
+			<span>500 руб.</span>
+			<p>Классическая пенка с карамельными нотками</p>
+		</div>
+	</div>
+</section>
+<section id="desserts" class="menu-section light">
+	<h2>Десерты</h2>
+	<div class="menu-grid">
+		<div class="item">
+			<h3>Ягодный тарт</h3>
+			<span>600 руб.</span>
+			<p>Свежие ягоды и сливки</p>
+		</div>
+		<div class="item">
+			<h3>Ванильный чизкейк</h3>
+			<span>550 руб.</span>
+			<p>Нежная кремовая текстура</p>
+		</div>
+		<div class="item">
+			<h3>Шоколадный круассан</h3>
+			<span>480 руб.</span>
+			<p>Сливочное тесто с шоколадом</p>
+		</div>
+	</div>
+</section>
+<section id="breakfast" class="menu-section">
+	<h2>Завтрак</h2>
+	<div class="menu-grid">
+		<div class="item">
+			<h3>Свежий тост</h3>
+			<span>380 руб.</span>
+			<p>Ванильный тост с ягодами</p>
+		</div>
+		<div class="item">
+			<h3>Тост с авокадо</h3>
+			<span>590 руб.</span>
+			<p>Свежая зелень и хрустящий хлеб</p>
+		</div>
+		<div class="item">
+			<h3>Классический омлет</h3>
+			<span>320 руб.</span>
+			<p>Яйца, сыр и зелень</p>
+		</div>
+	</div>
+</section>
+<script>
+
+function checkScreen(){
+
+    if(window.innerWidth <= 768){
+
+        document.body.classList.add("mobile");
+
+    }else{
+
+        document.body.classList.remove("mobile");
+
+    }
+
+}
+
+checkScreen();
+
+window.addEventListener("resize", checkScreen);
+
+</script>
+
+<footer>© 2026 Velvet Roast Café</footer>
+</body>
+</html>

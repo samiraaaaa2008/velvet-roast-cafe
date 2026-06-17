@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us | Velvet Roast Café</title>
+	<link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+<header class="hero">
+	<div class="logo-block"></div>
+	<nav>
+		<div class="logo">Velvet Roast Café</div>
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="menu.html">Меню</a></li>
+			<li><a href="gallery.html">Галерея</a></li>
+			<li><a href="reserve.html">Резерв</a></li>
+		</ul>
+	</nav>
+	<div class="hero-contect">
+		<h1>Наша История</h1>
+		<p> 
+		Место, где каждая чашка рассказывает свою историю.
+	    </p>
+	</div>
+</header>
+<section class="story">
+	<div class="story-image">
+        <img src="img/3foto.jpg">
+    </div>
+	<div class="story-text">
+		<h2>Вдохновлено классическими европейскими кафе</h2>
+		<p>
+			Кафе Velvet Roast было создано с простой идеей: 
+            объединить исключительный кофе, домашнюю выпечку 
+            и теплую атмосферу классических европейских кафе.
+		</p>
+		<p>
+            Каждая деталь, от дизайна интерьера до тщательно отобранных
+             кофейных зерен, призвана создать место, где люди могут 
+             расслабиться, пообщаться и насладиться моментом.
+        </p>
+	</div>
+</section>
+<section class="values">
+        <h2>Что делает Нас Особенными</h2>
+        <div class="features">
+            <div class="feature">
+                <span>☕</span>
+                <h3>Кофе премиум-класса</h3>
+                <p>Свежеобжаренные зерна от проверенных производителей.</p>
+           </div>
+           <div class="feature">
+                <span>🍰</span>
+                <h3>Домашние десерты</h3>
+                <p>Готовятся ежедневно из качественных ингредиентов.</p>
+            </div>
+            <div class="feature">
+                <span>🎷</span>
+                <h3>Ретро-атмосфера</h3>
+                <p>Винтажный шарм в сочетании с современным комфортом.</p>
+            </div>
+        </div>
+</section>
+<section class="quote">
+        <h2>
+            "Кофе лучше всего пить медленно".
+        </h2>
+        <p>
+            — Философия Velvet Roast
+        </p>
+</section>
+<section class="team">
+        <h2>Познакомьтесь с нашей командой</h2>
+        <p>
+            Наших бариста и кондитеров объединяет страсть к качеству, гостеприимству и незабываемым впечатлениям.
+        </p>
+</section>
+<script>
+
+function checkScreen(){
+
+    if(window.innerWidth <= 768){
+
+        document.body.classList.add("mobile");
+
+    }else{
+
+        document.body.classList.remove("mobile");
+
+    }
+
+}
+
+checkScreen();
+
+window.addEventListener("resize", checkScreen);
+
+</script>
+
+<footer>
+    © 2026 Velvet Roast Café
+</footer>
+</body>
+</html>
