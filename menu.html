@@ -7,106 +7,85 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero1">
+<header class="hero">
 	<div class="logo-block"></div>
 	<nav>
 		<div class="logo">Velvet Roast Café</div>
 		<ul>
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="about.html">История</a></li>
-			<li><a href="gallery.html">Галерея</a></li>
-			<li><a href="reserve.html">Резерв</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="reserve.html">Reserve</a></li>
 		</ul>
 	</nav>
 	<div class="hero-text">
-		<h1>Наше фирменное меню</h1>
+		<h1>Our Signature Menu</h1>
 		<p> 
-		приготовлено с любовью и подано с винтажным шармом
+		crafted with warmth and served with vintage charm
 	    </p>
 	</div>
+	<img src="img/menu.jpg">
 </header>
 <section id="coffee" class="menu-section">
-	<h2>Кофе и напитки</h2>
+	<h2>Coffee & Drinks</h2>
 	<div class="menu-grid">
 		<div class="item">
-			<h3>Эспрессо Рояль</h3>
-			<span>570 руб.</span>
-			<p>Насыщенный эспрессо с глубоким ароматом</p>
+			<h3>Espresso Royale</h3>
+			<span>$4.50</span>
+			<p>Rich espresso with deep aroma</p>
 		</div>
 		<div class="item">
-			<h3>Ванильный латте</h3>
-			<span>540 руб.</span>
-			<p>Нежное молоко с ванильной сладостью</p>
+			<h3>Vanilla Latte</h3>
+			<span>$5.50</span>
+			<p>Silky milk with vanilla sweetness</p>
 		</div>
 		<div class="item">
-			<h3>Карамельный капучино</h3>
-			<span>500 руб.</span>
-			<p>Классическая пенка с карамельными нотками</p>
+			<h3>Caramel Cappuccino</h3>
+			<span>$6.50</span>
+			<p>Classic foam and caramel notes</p>
 		</div>
 	</div>
 </section>
 <section id="desserts" class="menu-section light">
-	<h2>Десерты</h2>
+	<h2>Desserts</h2>
 	<div class="menu-grid">
 		<div class="item">
-			<h3>Ягодный тарт</h3>
-			<span>600 руб.</span>
-			<p>Свежие ягоды и сливки</p>
+			<h3>Berry Tart</h3>
+			<span>$6.50</span>
+			<p>Fresh Berries and cream</p>
 		</div>
 		<div class="item">
-			<h3>Ванильный чизкейк</h3>
-			<span>550 руб.</span>
-			<p>Нежная кремовая текстура</p>
+			<h3>Vanilla Cheesecake</h3>
+			<span>$5.50</span>
+			<p>Soft and creamy texture</p>
 		</div>
 		<div class="item">
-			<h3>Шоколадный круассан</h3>
-			<span>480 руб.</span>
-			<p>Сливочное тесто с шоколадом</p>
+			<h3>Chocolate Croissant</h3>
+			<span>$4.50</span>
+			<p>Buttery pastry with chocolate</p>
 		</div>
 	</div>
 </section>
 <section id="breakfast" class="menu-section">
-	<h2>Завтрак</h2>
+	<h2>Breakfast</h2>
 	<div class="menu-grid">
 		<div class="item">
-			<h3>Свежий тост</h3>
-			<span>380 руб.</span>
-			<p>Ванильный тост с ягодами</p>
+			<h3>Fresh Toast</h3>
+			<span>$8.50</span>
+			<p>Vanilla toast with berries</p>
 		</div>
 		<div class="item">
-			<h3>Тост с авокадо</h3>
-			<span>590 руб.</span>
-			<p>Свежая зелень и хрустящий хлеб</p>
+			<h3>Avocado Toast</h3>
+			<span>$9.50</span>
+			<p>Fresh herbs and crispy bread</p>
 		</div>
 		<div class="item">
-			<h3>Классический омлет</h3>
-			<span>320 руб.</span>
-			<p>Яйца, сыр и зелень</p>
+			<h3>Classic Omlette</h3>
+			<span>$7.50</span>
+			<p>Eggs, cheese and greens</p>
 		</div>
 	</div>
 </section>
-<script>
-
-function checkScreen(){
-
-    if(window.innerWidth <= 768){
-
-        document.body.classList.add("mobile");
-
-    }else{
-
-        document.body.classList.remove("mobile");
-
-    }
-
-}
-
-checkScreen();
-
-window.addEventListener("resize", checkScreen);
-
-</script>
-
 <footer>© 2026 Velvet Roast Café</footer>
 </body>
 </html>
